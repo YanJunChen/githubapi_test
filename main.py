@@ -4,7 +4,7 @@ import os
 github_headers = {"Authorization": os.environ["GH_HDR"] }
 
 def invite_collaborator(username):
-    url = f'https://api.github.com/repos/microsoft/EPSO-Server-Program-Community/collaborators/{username}'
+    url = f'https://api.github.com/repos/YanJunChen/githubapi_test/collaborators/{username}'
 
     response = requests.put(url, headers=github_headers)
     print("response.status_code = " , response.status_code)
