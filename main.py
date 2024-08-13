@@ -3,11 +3,12 @@ import os
 
 github_headers = {
     "Authorization": os.environ["GH_HDR"] ,
-    "Accept": "application/vnd.github.v3+json"
+    "Accept": "application/vnd.github.v3+json" ,
+    "X-GitHub-Api-Version" : "2022-11-28"
 }
 
 def invite_collaborator(username):
-    url = f'https://api.github.com/repos/githubapi_test/collaborators/{username}'
+    url = f'https://api.github.com/repos/YanJunChen/githubapi_test/collaborators/{username}'
 
     response = requests.put(url, headers=github_headers)
     print("response.status_code = " , response.status_code)
