@@ -16,4 +16,6 @@ def invite_collaborator(username):
     else:
         print(f'Failed to invite {username}. Response: {response.status_code} - {response.json()}')
 
-invite_collaborator("eikchen0713")
+if __name__ == "__main__":
+    print(github_headers))
+    invite_collaborator("eikchen0713")
