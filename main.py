@@ -1,7 +1,10 @@
 import requests
 import os
 
-github_headers = {"Authorization": os.environ["GH_HDR"] }
+github_headers = {
+    "Authorization": os.environ["GH_HDR"] ,
+    "Accept": "application/vnd.github.v3+json"
+}
 
 def invite_collaborator(username):
     url = f'https://api.github.com/repos/YanJunChen/githubapi_test/collaborators/{username}'
