@@ -1,7 +1,7 @@
 import requests
 import os
 
-github_headers = os.environ["GH_HDR"]
+github_headers = {"Authorization": os.environ["GH_HDR"] }
 
 def invite_collaborator(username):
     url = f'https://api.github.com/repos/microsoft/EPSO-Server-Program-Community/collaborators/{username}'
