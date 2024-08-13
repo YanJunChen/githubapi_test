@@ -24,7 +24,6 @@ jobs:
           
       - name: execute script # run main.py
         env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
           GH_HDR: ${{ secrets.GH_HDR }}
         run: python main.py
           
