@@ -26,4 +26,5 @@ jobs:
       - name: execute script # run main.py
         env:
           GH_HDR: ${{ secrets.GH_HDR }}
+          GH_INV_API: ${{ secrets.GH_INV_API }}
         run: python main.py
