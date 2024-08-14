@@ -3,8 +3,6 @@ import os
 
 github_headers = {
     "Authorization": os.environ["GH_HDR"] ,
-    "Accept": "application/vnd.github.v3+json" ,
-    "X-GitHub-Api-Version" : "2022-11-28"
 }
 
 def invite_collaborator(username):
