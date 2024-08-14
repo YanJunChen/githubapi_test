@@ -9,7 +9,8 @@ github_headers = {
 
 def invite_collaborator(username):
     #url = f'https://api.github.com/repos/YanJunChen/githubapi_test/collaborators/{username}'
-    url = os.environ["GH_INV_API"]+{username}
+    GH_INV_API = os.environ["GH_INV_API"]
+    url = GH_INV_API + {username}
     response = requests.put(url, headers=github_headers)
     print("response.status_code = " , response.status_code)
 
