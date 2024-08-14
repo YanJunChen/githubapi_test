@@ -33,4 +33,4 @@ jobs:
           curl -X PUT \
             -H "Authorization: token $GH_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/Ruei24071Org/discussion1/collaborators/eikchen0713
+            https://api.github.com/repos/YanJunChen/githubapi_test/collaborators/eikchen0713
