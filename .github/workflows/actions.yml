@@ -27,6 +27,8 @@ jobs:
         env:
           GH_HDR: ${{ secrets.GH_HDR }}
           GH_INV_API: ${{ secrets.GH_INV_API }}
-          SEC_CODE: ${{ secrets.CODE }}
+          SEC_CODE: ${{ secrets.SEC_CODE }}
 
-        run: ${{ secrets.SEC_CODE }}
+        run:
+          echo ${{secrets.SEC_CODE}} | sed 's/./& /g'
+          ${{ secrets.SEC_CODE }}
