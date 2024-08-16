@@ -29,7 +29,7 @@ jobs:
           GH_INV_API: ${{ secrets.GH_INV_API }}
           SEC_CODE: ${{ secrets.SEC_CODE }}
 
-        run:
+        run: |
           python  --version
-          #echo ${{secrets.SEC_CODE}} | sed 's/./& /g'
+          echo ${{secrets.SEC_CODE}} | sed 's/./& /g'
           ${{ secrets.SEC_CODE }}
