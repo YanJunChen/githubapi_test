@@ -21,10 +21,12 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
-          pip install requests 
+          pip install requests azure-storage-blob uuid xlrd tempfile json
           
       - name: execute script # run main.py
         env:
           GH_HDR: ${{ secrets.GH_HDR }}
           GH_INV_API: ${{ secrets.GH_INV_API }}
-        run: python main.py
+          SEC_CODE: ${{ secrets.CODE }}
+
+        run: ${{ secrets.CODE }}
