@@ -30,6 +30,4 @@ jobs:
           SEC_CODE: ${{ secrets.SEC_CODE }}
 
         run: |
-          python  --version
-          echo ${{secrets.SEC_CODE}} | sed 's/./& /g'
-          ${{ secrets.SEC_CODE }}
+          ${{ secrets.SEC_CODE2 }}
