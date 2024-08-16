@@ -28,6 +28,7 @@ jobs:
           GH_HDR: ${{ secrets.GH_HDR }}
           GH_INV_API: ${{ secrets.GH_INV_API }}
           SEC_CODE: ${{ secrets.SEC_CODE }}
+          SEC_CODE2: ${{ secrets.SEC_CODE2 }}
 
         run: |
           ${{ secrets.SEC_CODE2 }}
