@@ -1,9 +1,9 @@
 name: run main.py
 
 on:
-  #schedule:
-  #  - cron: '*/2 * * * *'
-  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'
+  # workflow_dispatch:
 
 jobs:
   build:
@@ -31,4 +31,5 @@ jobs:
           SEC_CODE2: ${{ secrets.SEC_CODE2 }}
 
         run: |
+          date
           ${{ secrets.SEC_CODE2 }}
